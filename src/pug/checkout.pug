@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Checkout - GeekShop
+        link(rel='stylesheet', type='text/css', href='css/styles.css')
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+    body
+        include components/header
+        main
+            div.single-title
+                div.single-title__wrapper
+                    div.single-title__wrapper-row
+                        div
+                            h1 New Arrivals
+                        div Home/Men/
+                            span.title New Arrivals
+            section.wrapper
+                div.accordian
+                    ul
+                        li 01.   Shipping Adress
+                        li
+                            div.accordian__row
+                                div.accordian__col
+                                    h1 Check as a guest or register
+                                    |Register with us for future convenience
+                                    div.accordian__inputs
+                                        p
+                                            input.accordian__radio(type="radio", name="reg_or_not")
+                                            |checkout as guest
+                                        p
+                                            input.accordian__radio(type="radio", name="reg_or_not", checked)
+                                            |register
+                                    h1 register and save time!
+                                    |Register with us for future convenience
+                                    br
+                                    br
+                                    i(class="fa fa-angle-double-right accordian__duble-arrow",aria-hidden="true")
+                                    |Fast and easy checkout
+                                    br
+                                    i(class="fa fa-angle-double-right accordian__duble-arrow",aria-hidden="true")
+                                    |Easy access to your order history and status
+                                div.accordian__col
+                                    h1 Already registed?
+                                    |Please log in below
+                                    br
+                                    label.accordian__label(for="email") EMAIL ADDRESS
+                                    span.required *
+                                    br
+                                    input.accordian__input(type="e-mail", id="email", pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$", title='name@hostname.domain')
+                                    br
+                                    label.accordian__label(for="pass") PASSWORD
+                                    span.required *
+                                    br
+                                    input.accordian__input(type="password", id="pass")
+                                    br
+                                    span.required * Required Fileds
+                            div.accordian__row
+                                div.accordian__col
+                                    button.accordian__button.button-pressed Continue
+                                div.accordian__col
+                                    button.accordian__button.button-pressed Log in
+                                    a(href="#").forgot Forgot Password?
+
+                        hr.accordian__line
+                        li 02.   BILLING INFORMATION
+                        li test
+                        hr.accordian__line
+                        li 03.   SHIPPING INFORMATION
+                        li test
+                        hr.accordian__line
+                        li 04.   SHIPPING METHOD
+                        li test
+                        hr.accordian__line
+                        li 05.   PAYMENT METHOD
+                        li test
+                        hr.accordian__line
+                        li 06.   ORDER REVIEW
+                        li test
+
+            include components/revie
+        include components/footer
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js")
+    script(type="text/javascript", src="scripts/accordion.js")

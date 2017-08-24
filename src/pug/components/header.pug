@@ -1,0 +1,83 @@
+header.header
+    div.header__block
+        div.leftblock
+            div.header__logo
+                a(href='index.html')
+                    img(src='img/logo.jpg', alt='its our brand', class='header__logo-img')
+            div.header__search
+                label(for='check_category')
+                    div.header__search-categorybutton.button-pressed Browse
+                        input(type='checkbox', id='check_category').header__search-check
+                        div.submenu
+                                h1 Women
+                                hr
+                                ul
+                                    li
+                                        a(href='#') Dresses
+                                    li
+                                        a(href='#') Tops
+                                    li
+                                        a(href='#') Sweaters/knits
+                                    li
+                                        a(href='#') Jackets/Coats
+                                    li
+                                        a(href='#') Blazers
+                                    li
+                                        a(href='#') Denim
+                                    li
+                                        a(href='#') Leggins/Pants
+                                    li
+                                        a(href='#') Skirts/Shorts
+                                    li
+                                        a(href='#') Accessories
+
+                                h1 Men
+                                hr
+                                ul
+                                    li
+                                        a(href='#') Tees/Tank tops
+                                    li
+                                        a(href='#') Shirts/Polos
+                                    li
+                                        a(href='#') Sweaters
+                                    li
+                                        a(href='#') Sweatshirts/Hoodies
+                                    li
+                                        a(href='#') Blazers
+                                    li
+                                        a(href='#') Jackets/Vests
+                        i(class='fa fa-sort-desc header__search-categorybutton-droparrow')
+                form(action='#').header__search-form
+                    input(class='header__search-input', type='search', placeholder='Search for item...')
+                    button(type='submit').header__search-searchbutton.button-pressed
+                        i(class='fa fa-search header__searchbutton-searchicon')
+        div.header__account
+            label(for='check_basket')
+                div.header__account-basket.button-pressed-wtheff
+                    i(class='sprite sprite-Forma-1')
+                    input(type='checkbox', id='check_basket').header__search-check
+                    div.submenu2
+                        h1 Total $0.0
+                        div.buttons
+                            div.checkout.button-pressed Checkout
+                            div.gotocart.button-pressed Go to Cart
+
+            div.header__account-button.button-active My Account
+                i(class='fa fa-sort-desc header__account-button-droparrow')
+div.wrapper
+    nav.header__menu
+        ul.header__menu-list
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') Home
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') Man
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') Women
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') kids
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') Accessoriese
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') Featured
+            li.header__menu-item
+                a(href='#', class='header__menu-item-link') hot deals

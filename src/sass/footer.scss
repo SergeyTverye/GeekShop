@@ -1,0 +1,95 @@
+@import 'smart-grid';
+@import "project";
+
+.footer__content{
+  @include wrapper();
+  margin-top: 110px;
+}
+
+.footer__content-row{
+  @include row-flex();
+  justify-content: space-between;
+}
+
+.footer__about{
+  @include col();
+  @include size(5);
+  color: #898989;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.footer__company{
+  @include col();
+  @include size(2);
+  h1 {
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  a {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 59px;
+    text-align: right;
+    text-decoration: none;
+
+    &:hover{
+      //text-shadow: 1px 1px #732372;
+      color: #ef5b70;
+    }
+  }
+}
+
+.footer__copy{
+  background-color: #e6e6e6;
+  height: 80px;
+  margin-top: 80px;
+}
+.footer__copy-wrap{
+  @include wrapper;
+  height: 100%;
+}
+
+.footer__copy-wrap-text {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.footer__copy-wrap-icon{
+  display: flex;
+}
+
+.footer__copy-wrap-icon-item{
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b2b2b2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 42px;
+
+  cursor: pointer;
+  &:active{
+    @extend .button-pressed-wtheff;
+  }
+
+  &:hover{
+    background-color: #f16d7f;
+    color: #f7f7f8;
+  }
+}

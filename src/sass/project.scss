@@ -1,0 +1,116 @@
+//файл с общими стилями сайта
+@import "smart-grid";
+
+*{
+  font-family: Lato, serif;
+}
+
+
+//выделяемые и нажимаемые кнопки
+.button-active{
+  cursor: pointer;
+  &:hover{
+    background-color: #f13d7f;
+
+  }
+
+  &:active{
+    position: relative;
+    top: 0.5px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+  }
+}
+
+.button-pressed{
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    //background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  }
+  &:active {
+    position: relative;
+    top: 0.5px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  }
+}
+
+.button-pressed-wtheff{
+  cursor: pointer;
+  &:active {
+    position: relative;
+    top: 0.5px;
+  }
+}
+
+//колонки
+.col2{
+  @include size(2);
+}
+
+.col5{
+  @include size(5);
+}
+
+.col3{
+  @include size(3);
+}
+
+.col4{
+  @include size(4);
+}
+
+.col1{
+  @include size(1);
+}
+
+.margin-top{
+  margin-top: 50px;
+}
+
+//для аккардеона
+
+.even, .odd {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+  //sprite
+.sprite {
+  background: url(../img/spritesheet.png) no-repeat;
+  display: block;
+}
+
+.sprite-Forma-1 {
+  width: 32px;
+  height: 29px;
+  background-position: -5px -5px;
+}
+
+.sprite-Forma-1-_1_ {
+  width: 40px;
+  height: 40px;
+  background-position: -5px -44px;
+}
+
+.sprite-Forma-1-_2_ {
+  width: 47px;
+  height: 35px;
+  background-position: -5px -94px;
+}
+
+.sprite-Forma-1-_3_ {
+  width: 45px;
+  height: 32px;
+  background-position: -5px -139px;
+}
+
+.sprite-Forma-1-copy {
+  width: 23px;
+  height: 22px;
+  background-position: -5px -181px;
+}

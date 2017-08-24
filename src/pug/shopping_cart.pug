@@ -1,0 +1,134 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Shopping Cart - GeekShop
+        link(rel='stylesheet', type='text/css', href='css/styles.css')
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+    body
+        include components/header
+        main
+            div.single-title
+                div.single-title__wrapper
+                    div.single-title__wrapper-row
+                        div
+                            h1 New Arrivals
+                        div Home/Men/
+                            span.title New Arrivals
+            section.products-table__wrapper
+                div.products-table__row
+                    div.products-table__col.col5.col-first  Product Details
+                    div.products-table__col.col2  Unite Price
+                    div.products-table__col.col1  Quantity
+                    div.products-table__col.col1  Shipping
+                    div.products-table__col.col2  Subtotal
+                    div.products-table__col.col1  Action
+
+                div.products-table__row.col-details
+                    div.products-table__col.col2.col-first
+                        img(src='img/Shopping-Cart1.jpg')
+                    div.products-table__col.col-details.col3.col-first
+                        div
+                            h1 mango people t-shirt
+                            b Color: &nbsp;
+                            | Red
+                            br
+                            b Size: &nbsp;
+                            | Xll
+                    div.products-table__col.col2  $150
+                    div.products-table__col.col1
+                        input.product-table__input(id="table-quantity1", type="number", value="2", step="1")
+                    div.products-table__col.col1  FREE
+                    div.products-table__col.col2  $300
+                    div.products-table__col.col1
+                        div.del-item
+                            i(class="fa fa-times-circle", aria-hidden="true")
+
+                div.products-table__row.col-details
+                    div.products-table__col.col2.col-first
+                        img(src='img/Shopping-Cart2.jpg')
+                    div.products-table__col.col-details.col3.col-first
+                        div
+                            h1 mango people t-shirt
+                            b Color: &nbsp;
+                            | Red
+                            br
+                            b Size: &nbsp;
+                            | Xll
+                    div.products-table__col.col2  $150
+                    div.products-table__col.col1
+                        input.product-table__input(id="table-quantity2", type="number", value="2", step="1")
+                    div.products-table__col.col1  FREE
+                    div.products-table__col.col2  $300
+                    div.products-table__col.col1
+                        div.del-item
+                            i(class="fa fa-times-circle", aria-hidden="true")
+
+                div.products-table__row.col-details
+                    div.products-table__col.col2.col-first
+                        img(src='img/Shopping-Cart3.jpg')
+                    div.products-table__col.col-details.col3.col-first
+                        div
+                            h1 mango people t-shirt
+                            b Color: &nbsp;
+                            | Red
+                            br
+                            b Size: &nbsp;
+                            | Xll
+                    div.products-table__col.col2  $150
+                    div.products-table__col.col1
+                        input.product-table__input(id="table-quantity3", type="number", value="2", step="1")
+                    div.products-table__col.col1  FREE
+                    div.products-table__col.col2  $300
+                    div.products-table__col.col1
+                        div.del-item
+                            i(class="fa fa-times-circle", aria-hidden="true")
+
+                div.products-table__button-row
+                    div.products-table__button.button-pressed clear shopping cart
+                    div.products-table__button.button-pressed continue shopping
+
+                div.delivery__row
+                    div.delivery__col
+                        h1 Shipping Adress
+                        form.delivery__form(action="#")
+                            select.delivery__select
+                                option USA
+                                option UK
+                                option German
+                                option France
+                            input.delivery__input(placeholder="State")
+                            input.delivery__input(placeholder="Postcode/Zip")
+                            button.delivery__button.button-pressed Get a quote
+                    div.delivery__col
+                        h1 Coupon Discount
+                        |Enter your coupon if you have one
+                        form.delivery__form(action="#")
+                            input.delivery__input(placeholder="Code")
+                            button.delivery__button.button-pressed Apply Coupon
+                    div.delivery__col
+                        div.delivery__back
+                            span
+                                span Sub Total
+                                span $900
+                            span
+                                span.delivery__grand Grand Total
+                                span.delivery__price $900
+                            hr
+                            button.delivery__back-button Proceed to checkout
+
+
+
+
+
+
+
+
+
+
+
+
+
+            include components/revie
+        include components/footer

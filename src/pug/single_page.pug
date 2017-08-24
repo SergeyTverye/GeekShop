@@ -1,0 +1,132 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Single Page - GeekShop
+        link(rel='stylesheet', type='text/css', href='css/styles.css')
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+    body
+        include components/header
+        main
+            div.single-title
+                div.single-title__wrapper
+                    div.single-title__wrapper-row
+                        div
+                            h1 New Arrivals
+                        div Home/Men/
+                            span.title New Arrivals
+            div.single-slider__wall
+                div.single-slider__wrapper
+                    div.single-slider
+                        div ‹
+                        img(src="img/slider2.jpg", alt="")
+                        div ›
+            div.single-product__wrapper
+                section.single-product
+                    div.single-product-col
+                        h2 women collections
+                        h3 Moschino Cheap And Chic
+                        p Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.
+                        div.single-product__material
+                            div MATERIAL:
+                                b COTTON
+                            div DESIGNER:
+                                b BINBURHAN
+                        div.price $561
+                        div.filter__title
+                            div.filter__col choose color
+                                div.filter__selection-item
+                                    a(href="#")
+                                        div.filter__selection-item-colorblock
+                                        div red
+                                    ul.filter-dropmenu
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-colorblock.filter__selection-item-colorblock2
+                                                div black
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-colorblock.filter__selection-item-colorblock3
+                                                div blue
+                            div.filter__col chose size
+                                div.filter__selection-item
+                                    a(href="#")
+                                        div.filter__selection-item-text XL
+                                    ul.filter-dropmenu
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-text L
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-text M
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-text S
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-text XS
+                                        li
+                                            a(href="#")
+                                                div.filter__selection-item-text XSS
+                            div.filter__col quantity
+                                input.filter__selection-item(id="quantity", type="number", value="1", step="1")
+                        div.single-product-add.button-pressed
+                            img(src="img/basket.svg")
+                            |Add To Cart
+
+            div.shop__wapper
+                div.shop__title
+                    div.shop__title-text
+                        h1 YOU MAY LIKE ALSO
+                div.shop__cards
+                    div.shop__card
+                        div.shop__card-img
+                            div.shop__card-img-swadow
+                            div.shop__card-img-add
+                                i(class="sprite sprite-Forma-1-copy")
+                                | Add to Cart
+                            img(src='img/Single-Page-Card1.jpg' alt='t-shirt')
+                        div.shop__card-about
+                            span.shop__card-desc  mango people t-shirt
+                            br
+                            span.shop__card-price $52.00
+                    div.shop__card
+                        div.shop__card-img
+                            div.shop__card-img-swadow
+                            div.shop__card-img-add
+                                i(class="sprite sprite-Forma-1-copy")
+                                | Add to Cart
+                            img(src='img/Single-Page-Card2.jpg' alt='t-shirt')
+                        div.shop__card-about
+                            span.shop__card-desc  mango people t-shirt
+                            br
+                            span.shop__card-price $52.00
+                    div.shop__card
+                        div.shop__card-img
+                            div.shop__card-img-swadow
+                            div.shop__card-img-add
+                                i(class="sprite sprite-Forma-1-copy")
+                                | Add to Cart
+                            img(src="img/Single-Page-Card3.jpg" alt='t-shirt')
+                        div.shop__card-about
+                            span.shop__card-desc  mango people t-shirt
+                            br
+                            span.shop__card-price $52.00
+                    div.shop__card
+                        div.shop__card-img
+                            div.shop__card-img-swadow
+                            div.shop__card-img-add
+                                i(class="sprite sprite-Forma-1-copy")
+                                | Add to Cart
+                            img(src="img/Single-Page-Card4.jpg" alt='t-shirt')
+                        div.shop__card-about
+                            span.shop__card-desc  mango people t-shirt
+                            br
+                            span.shop__card-price $52.00
+
+
+
+
+            include components/revie
+        include components/footer

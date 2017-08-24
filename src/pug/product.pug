@@ -1,0 +1,250 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Products - GeekShop
+        link(rel='stylesheet', type='text/css', href='css/styles.css')
+        link(rel='stylesheet', type='text/css', href='css/ion.rangeSlider.css')
+        link(rel='stylesheet', type='text/css', href='css/ion.rangeSlider.skinHTML5.css')
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Lato", rel="stylesheet")
+    body
+        include components/header
+        main
+            div.single-title
+                div.single-title__wrapper
+                    div.single-title__wrapper-row
+                        div
+                            h1 New Arrivals
+                        div Home/Men/
+                            span.title New Arrivals
+
+            div.wrapper
+                div.products__row
+                    aside.aside__col
+                        div.accordian.product__accordion
+                            ul
+                                li.active.name Category
+                                li
+                                    div
+                                        a(href="#") Accessories
+                                        br
+                                        a(href="#") Bags
+                                        br
+                                        a(href="#") Denim
+                                        br
+                                        a(href="#") Hoodies & Sweatshirts
+                                        br
+                                        a(href="#") Jackets & Coats
+                                        br
+                                        a(href="#") Pants
+                                        br
+                                        a(href="#") Polos
+                                        br
+                                        a(href="#") Shirts
+                                        br
+                                        a(href="#") Shoes
+                                        br
+                                        a(href="#") Shorts
+                                        br
+                                        a(href="#") Sweaters & Knits
+                                        br
+                                        a(href="#") T-Shirts
+                                        br
+                                        a(href="#") Tanks
+                                li.name Brand
+                                li
+                                    a(href="#") test
+                                li.name Designer
+                                li
+                                    a(href="#") test
+                    div.products__table
+                        div.products__table-wrapper
+                            div.products__table-setting-col-2
+                                h1 Trending now
+                                a(href="#") Bohemian &nbsp;&nbsp;|&nbsp;&nbsp;
+                                a(href="#") Floral &nbsp;&nbsp;|&nbsp;&nbsp;
+                                a(href="#") Lace &nbsp;&nbsp;&nbsp;&nbsp;
+                                a(href="#") Floral &nbsp;&nbsp;|&nbsp;&nbsp;
+                                a(href="#") Lace &nbsp;&nbsp;|&nbsp;&nbsp;
+                                a(href="#") Bohemian
+                            div.products__table-setting-col
+                                h1 Size
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='xss')
+                                    label.checkbox__label(for='xss') XSS
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='xs')
+                                    label.checkbox__label(for='xs') XS
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='s')
+                                    label.checkbox__label(for='s') S
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='m')
+                                    label.checkbox__label(for='m') M
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='l')
+                                    label.checkbox__label(for='l') L
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='xl')
+                                    label.checkbox__label(for='xl') XL
+                                div.checkbox__row
+                                    input.checkbox(type='checkbox', id='xxl')
+                                    label.checkbox__label(for='xxl') XXL
+
+                            div.products__table-setting-col
+                                h1 PRICE
+                                input(type="text", id="range", name="range", value="")
+                        div.products__table-wrapper
+                            div.product__sort
+                                form.product__sort-form
+                                    button.button-pressed  Sort By
+                                    select
+                                        option Name
+                                        option Date
+                                        option Price
+                                form.product__sort-form
+                                    button.button-pressed  Show
+                                    select
+                                            option 9
+                                            option 18
+                                            option 27
+                        div.products__table-wrapper
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card1.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card2.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card3.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card4.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card5.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card6.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card7.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card8.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                            div.shop__card.product
+                                div.shop__card-img
+                                    div.shop__card-img-swadow
+                                    div.shop__card-img-add
+                                        i(class="sprite sprite-Forma-1-copy")
+                                        | Add to Cart
+                                    img(src="img/card3.jpg" alt='t-shirt')
+                                div.shop__card-about
+                                    span.shop__card-desc  mango people t-shirt
+                                    br
+                                    span.shop__card-price $52.00
+
+                        div.products__table-wrapper.margin-top.products-table__wrapper-row
+                            div.pages
+                               a(href="#")
+                                   i(class="fa fa-chevron-left")
+                               a(href="#") 1
+                               a(href="#") 2
+                               a(href="#") 3
+                               a(href="#") 4
+                               a(href="#") 5
+                               a(href="#") ...
+                               a(href="#") 20
+                               a(href="#")
+                                   i(class="fa fa-chevron-right")
+                            div.products__button.button-pressed View All
+
+
+
+
+
+
+
+
+
+
+            include components/revie
+        include components/footer
+        script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        script(type="text/javascript", src="scripts/accordion.js")
+        script(type="text/javascript", src="scripts/ion.rangeSlider.min.js")
+        script(type="text/javascript", src="scripts/range.js")

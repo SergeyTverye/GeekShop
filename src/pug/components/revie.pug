@@ -1,0 +1,20 @@
+div.revie
+    div.revie__wrap
+        div.revie__row
+            div.revie__comment
+                div.revie__comment-row
+                    div.revie__comment-avatar
+                        img(src='img/avatar.png')
+                    div.revie__comment-text “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                        br
+                        span.revie__comment-name Bin Burhan
+                        br
+                        span.revie__comment-city Dhaka, Bd
+            div.revie__sub
+                div.revie__sub-text
+                    h2 Subscribe
+                    br
+                    | for our newletter and promotion
+                    form(action='#').revie__sub-form
+                        input(type='email', class='revie__sub-input', pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$", placeholder='Enter Your Email', title='name@hostname.domain')
+                        input(type='submit', value='Subscribe').revie__sub-button.button-active
